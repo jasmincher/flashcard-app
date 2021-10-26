@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="title">Make your own flashcards</h1>
+      <h4 class="instructions"><span class="bold">Instructions:</span> To create a new flashcard click on the <span class="bold">Add New Flashcard</span> button, this will display the flashcard form, once you click <span class="bold">save</span>, a new flashcard will appear. To see the answer hover over the card.</h4>
+      <button id="add-flashcard-btn">Add New Flashcard</button>
+      <form id="flashcard-form">
+        <div>
+          <label>Question</label>
+          <textarea id="question-input"></textarea>
+        </div>
+
+        <div>
+          <label>Answer</label>
+          <textarea id="answer-input"></textarea>
+        </div>
+
+        <button type="submit">save</button>
+      </form>
+
+      <div id="flashcard-list"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

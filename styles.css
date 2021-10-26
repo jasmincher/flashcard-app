@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(235, 235, 235);
+}
+
+.title,
+.instructions {
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.instructions {
+  width: 50%;
+  margin: 30px auto;
+  font-weight: 300;
+}
+
+#add-flashcard-btn {
+  margin: auto;
+  display: block;
+  background-color: rgb(146, 191, 215);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#flashcard-form {
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 30px auto;
+}
+#flashcard-form textarea {
+  font-family: "Quicksand", sans-serif;
+}
+
+#flashcard-form button {
+  margin: 10px 0;
+  width: 70%;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 3px 0;
+}
+
+#flashcard-form textarea {
+  display: block;
+}
+
+.card-container {
+  width: 220px;
+  height: 150px;
+  margin: 20px;
+  position: relative;
+}
+
+.question-side,
+.answer-side {
+  width: 220px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  transition: all 800ms ease;
+  backface-visibility: hidden;
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.438);
+
+}
+
+.question-side {
+    background: rgb(146, 191, 215);
+    color: white;
+    transition: all 800ms ease;
+}
+
+.answer-side {
+    background: white;
+  transform: rotateY(180deg);
+}
+
+.card-container:hover .question-side {
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .answer-side {
+  transform: rotateY(0);
+}
+
+#flashcard-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.bold{
+    font-weight: 700;
+}
